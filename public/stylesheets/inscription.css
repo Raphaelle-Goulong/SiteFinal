@@ -1,0 +1,123 @@
+*
+{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;   
+}
+
+body
+{
+    background:linear-gradient(black,rgb(77, 76, 76), rgb(0, 0, 0)); 
+    
+    
+}
+
+/* nav */
+.navbar
+{
+    background-color: black;
+    font-size: 15px;
+   
+}
+/* nav */
+
+/* modal body */
+.modal-body
+{
+    background-color: rgba(252, 252, 252, 0.479);
+    justify-content: center;
+   
+}
+.card-modal
+{
+    display: flex; 
+    justify-content:center ;
+    padding: 10px; 
+    background-color:#d6d4d2;
+    border-radius: 15px;
+    width: 350px;
+}
+/* modal body */
+
+/* nav2 */
+
+.navbar2
+{
+    background-color: rgba(0, 0, 0, 0.431);
+    font-size: 17px;
+}
+
+.collapse
+{
+    justify-content: center;
+
+}
+
+.form-inline
+{
+    padding: 30px;  
+}
+/* nav2 */
+
+/* card inscription */
+.card-inscription
+{
+    background-color: rgba(255, 255, 255, 0.356);
+    color: white;
+    width: 600px;
+    height: 800px;
+    border-radius: 30px;
+    margin: 50px;
+    padding: 20px;
+    background-image: url(/img/logo_small.png);
+    background-repeat: no-repeat;
+    background-position:center ;
+}
+
+
+.form-group
+{
+    width: 500px;
+    margin-left: 30px;
+}
+
+.link
+{
+    margin-top: 30px;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.form-check
+{
+    margin-top: 40px; 
+    margin-left: 30px;
+}
+/* card inscription */
+
+a 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 60px;
+    color: white;
+    font-size: 20px;
+}
+
+a:hover 
+{
+    color: #b89a82 ;
+}
+
+footer
+{
+    background-color: black;
+}
+
+.btn:hover 
+{
+    color: #b89a82 ;
+    
+}

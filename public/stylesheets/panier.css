@@ -1,0 +1,88 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;   
+   }
+
+.navbar
+{
+    background-color: black;
+    font-size: 15px;
+   
+}
+
+.navbar2
+{
+    background-color: rgba(0, 0, 0, 0.911);
+    font-size: 17px;
+}
+
+.form-inline
+{
+    padding: 30px;  
+}
+
+
+
+.modal-body{
+    background-color: rgba(0, 0, 0, 0.253);
+    justify-content: center;
+   
+}
+
+.card{
+  
+    display: flex;
+    justify-content: center;
+    background-color:rgba(0, 0, 0, 0.432) ;
+}
+
+main{
+    padding:100px;
+}
+
+.form-outline{
+    width: 60px;
+}
+
+
+img.produit{
+
+height: 60px;
+width: 60px;
+
+}
+a 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 60px;
+    color: white;
+    font-size: 20px;
+}
+a:hover 
+{
+    color: #b89a82 ;
+}
+
+
+main
+{   
+    height: 100vh;
+    background-color: rgba(82, 80, 80, 0.712);
+    margin: 5px; 
+    
+}
+
+
+footer
+{
+    background-color: black;
+}
+
+.btn:hover 
+{
+    color: #b89a82 ;
+}

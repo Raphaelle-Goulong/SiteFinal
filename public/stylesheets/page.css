@@ -1,0 +1,147 @@
+*
+{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;   
+}
+/* nav */
+.navbar
+{
+    background-color: black;
+    font-size: 15px;
+   
+}
+
+.form-inline
+{
+    padding: 30px;  
+}
+/* nav */
+
+/* modal body */
+.modal-body
+{
+    background-color: rgba(252, 252, 252, 0.479);
+    justify-content: center;
+   
+}
+.card-modal
+{
+    display: flex; 
+    justify-content:center ;
+    padding: 10px; 
+    background-color:#d6d4d2;
+    border-radius: 15px;
+    width: 350px;
+}
+/* modal body */
+
+/* card */
+.card
+{
+    display: flex;
+    justify-content: center;
+    background-color:rgba(247, 242, 242, 0.349) ;
+    border-radius: 15px;
+    height: 400px;
+    width: 300px;
+    padding: 10px; 
+    margin: 40px;
+    
+    
+}
+
+.card-text{
+    display: flex;
+    text-align: end;
+    margin-left: 150px;
+    margin-top: 100px;
+   
+}
+
+ .card-articles
+{
+    display: flex;
+    flex-direction: row; 
+    /* margin-bottom: 20px;
+    margin-top: 20px; */
+    background-color:rgba(252, 252, 252, 0) ;
+    border-radius: 15px;
+   
+
+}
+
+ .card-body
+ {
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+
+ }
+
+/* card */
+
+/* nav2 */
+.navbar2
+{
+    background-color: rgba(0, 0, 0, 0.911);
+    font-size: 17px;
+}
+
+.collapse
+{
+    justify-content: center;
+
+}
+/* nav2 */
+
+
+main
+{
+    background-color: rgba(190, 190, 190, 0.959); 
+}
+
+a 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 60px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a:hover 
+{
+    color: #b89a82 ;
+}
+
+
+/* card groupe */
+.form-inline
+{
+    padding: 30px;  
+}
+
+
+.card-group
+{
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
+/* card groupe */
+
+
+
+footer
+{
+    background-color: black;
+}
+
+.btn:hover 
+{
+    color: #b89a82 ;
+}
