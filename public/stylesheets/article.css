@@ -6,9 +6,10 @@
     font-family: 'Nunito', sans-serif;   
 }
 
-main
+body
 {
-    background-color: rgba(82, 80, 80, 0.452); 
+    background:linear-gradient(black,rgb(77, 76, 76), rgb(0, 0, 0)); 
+  
 }
 
 /* nav */

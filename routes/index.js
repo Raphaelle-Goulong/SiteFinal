@@ -29,8 +29,16 @@ router.get('/samChausse', function(req, res, next) {
 router.get('/article', function(req, res, next) {
   res.render('article', );
 });
+
 router.get('/inscription', function(req, res, next) {
   res.render('inscription', );
 });
 
+router.get('/panier', function(req, res, next) {
+  res.render('panier', );
+});
+
+router.get('/modification', function(req, res, next) {
+  res.render('modification', );
+});
 module.exports = router;

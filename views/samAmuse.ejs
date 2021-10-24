@@ -26,10 +26,18 @@
             <form class="form-inline">
               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" >
             </form>
-            <a href="#"><i class="fad fa-search "></i></a> 
-            <a href="/accueil"><i class="fad fa-home"></i></a>
-            <a href="#"><i class="fad fa-user "data-toggle="modal" data-target="#exampleModalCenter"></i></a>
-            <a href="/panier"><i class="fad fa-shopping-cart "></i></a>
+            <a href="#">
+              <i class="fad fa-search "></i>
+            </a> 
+            <a href="/accueil">
+              <i class="fad fa-home"></i>
+            </a>
+            <a href="#">
+              <i class="fad fa-user "data-toggle="modal" data-target="#exampleModalCenter"></i>
+            </a>
+            <a href="/panier">
+              <i class="fad fa-shopping-cart "></i>
+            </a>
            
             
 <!-- Modal -->
@@ -54,32 +62,123 @@
                  <button class="mt-4 btn btn-dark d-flex justify-content-center align-items-center">S'identifier</button>
                 <div class="mt-3 text1"> <span class="mt-3 forget">Mot de passe oublié ?</span> </div> <br>
                 <p> Connectez-vous avec </p>
-                <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"
-                ><i class="fab fa-facebook-square"></i>
+                <a class="btn btn-outline-light btn-floating m-1" href="#" role="button">
+                  <i class="fab fa-facebook-square"></i>
                 </a>
-                <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"
-                ><i class="fab fa-google"></i>
+                <a class="btn btn-outline-light btn-floating m-1" href="#" role="button">
+                  <i class="fab fa-google"></i>
                 </a>
                 <div class="text2 mt-4 d-flex flex-row align-items-center"> 
-                    <span> Vous n'avez pas de compte ?<span class="register"> Inscrivez-vous <a href="/inscription">ici</a> </span></span> 
+                    <span> Vous n'avez pas de compte ?<span class="register"> Inscrivez-vous <a href="../connexion/conexion.html">ici</a> </span></span> 
                 </div>
               </div>
             </div>
             <!-- contenue formulaire -->
-    </div>
-    </div>
-
-    <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-      <button type="button" class="btn btn-primary">Sauvegarder les changements</button>
-          </div>
         </div>
       </div>
+
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                <button type="button" class="btn btn-primary">Sauvegarder les changements</button>
+          </div>
     </div>
+      </div>
   </div>
 </div>
-</nav>
 <!-- modal -->
+
+<!-- Modal2 -->
+<!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"> 
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Compte</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+    
+    <div class="modal-body">
+      <div class="container mt-5 mb-5 ">
+        <div class="d-flex flex row justify-content-center">
+            <!-- contenue formulaire -->
+            <!-- <div class="card-modal">
+              <div class="compte-modal">
+                <div id="accordion">
+                    <div class="card-modal2">
+                      <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <i class="fad fa-user-circle"></i>
+                          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Mon Compte
+                          </button>
+                        </h5>
+                      </div>
+                  
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                           <h5>Bienvenue Mr Doe </h5> 
+                          <a href="/modification.html"><h5>Modifier mon compte</h5></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-modal2">
+                      <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                           <i class="fad fa-bags-shopping"></i> 
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Mes Commandes
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                          <h5>Vous n'avez aucune commande en cours.</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-modal2">
+                      <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <i class="fad fa-power-off"></i>
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                           Déconnexion
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="alert alert-success" role="alert">
+                                <h5>Vous nous quittez déjà ? <i class="fad fa-sad-cry"></i></h5> 
+                                <h6>Pour confirmez votre déconnexion </h6> 
+                                <a href="#" class="alert-link" style="color: white; ">Cliquez ici</a>
+                              </div>
+                            
+                              
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+            </div>
+            <!-- contenue formulaire -->
+        <!-- </div>
+      </div>
+
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                <button type="button" class="btn btn-primary">Sauvegarder les changements</button>
+          </div>
+    </div>
+      </div>
+  </div>
+</div> -->
+<!-- modal2 -->
+
+              </div>
+          </nav>
+
 <!-- nav -->
 
 <!-- seconde nav -->
@@ -242,8 +341,7 @@
             <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button"> 
               <i class="fab fa-instagram"></i>
             </a>
-      
-           
+  
           <!-- Section: Social media -->
       
          
