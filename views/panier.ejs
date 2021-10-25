@@ -220,7 +220,7 @@
         <tr>
           <th scope="col">#</th>
           <th scope="col">Produit</th>
-          <th scope="col">Model</th>
+          <th scope="col">Nom</th>
           <th scope="col">Quantité</th>
           <th scope="col">Prix</th>
           <th scope="col">Total</th>
@@ -228,22 +228,29 @@
         </tr>
       </thead>
       <tbody>
+        <% 
+        var total = 0;
+        for (var i = 0 ; i < myShop.length ;i++){ 
+            total = total + (myShop[i].price*myShop[i].quantity);
+            %> 
+
+
         <tr>
-          <th scope="row">1</th>
+          <th scope="row"><%=i+1%></th>
           <td>
-            <img class="produit" src="/images/imgachat.jpg" alt="">
+            <img class="produit" src="<%=myShop[i].url%>" alt="">
           </td>
           <td>
-            BIK045
+            <%=myShop[i].name%>
           </td>
           <td>
             <div class="form-outline">
-            <input type="number" id="typeNumber" class="form-control" />
+            <input type="number" id="typeNumber" class="form-control" value=<%=myShop[i].quantity%> />
             <label class="form-label" for="typeNumber"></label>
           </div>
         </td>
-          <td><h5>6 €</h5></td>
-          <td><h5>6 €</h5></td>
+          <td><h5><%=myShop[i].price%></h5></td>
+          <td><h5><%=myShop[i].price* myShop[i].quantity%></h5></td>
           <td><button class="btn btn-outline-light btn-sm" name="button"><i class="fad fa-trash"></i></button>
         </tr>
 
@@ -253,7 +260,7 @@
           <td></td>
           <td></td>
           <td class="total-box">Prix total : </td>
-          <td>6 €</td>
+          <td><%= totalCmd %>€</td>
           <td></td>
           
         </tr>

@@ -190,16 +190,16 @@
             <a class="nav-link"  href="/accueil">Accueil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"  href="/sam'habille">Sam'Habille</a>
+            <a class="nav-link"  href="/samHabille">Sam'Habille</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Sam'Chausse</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/sam'Amuse">Sam'Amuse</a>
+            <a class="nav-link" href="/samAmuse">Sam'Amuse</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/sam'Locale">Sam'Locale</a>
+            <a class="nav-link" href="/samLocale">Sam'Locale</a>
           </li>
         </ul>
       </div>
@@ -207,116 +207,35 @@
 <!-- seconde nav -->
 
 </header>
-
-
 <!-- cards -->
 <main>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-sm-8 col-lg-6">
-      <div class="card-body">
-        <a href="/article">
-          <div class="card-articles">
-            <div class="card-deck">
-              <div class="card">
-                <img class="card-img-top" src="/images/imgachat.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Nike</h5> 
-                      <h4 class="card-text">150€</h4>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </a>
-
-      <a href="/article">
-        <div class="card-articles">
-          <div class="card-deck">
-            <div class="card">
-              <img class="card-img-top" src="/images/imgachat.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Nike</h5> 
-                    <h4 class="card-text">150€</h4>
-                </div>
-            </div>
-          </div>
-        </div>
-      </a>
-
-    <a href="/article">
-      <div class="card-articles">
-        <div class="card-deck">
-          <div class="card">
-            <img class="card-img-top" src="/images/imgachat.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Nike</h5> 
-                  <h4 class="card-text">150€</h4>
-              </div>
-          </div>
-        </div>
-      </div>
-    </a>  
-      </div>
+  <div class="container " >
+    <div class="row ">
     
-  </div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="card-body">
-        <a href="/article">
-          <div class="card-articles">
-            <div class="card-deck">
-              <div class="card">
-                <img class="card-img-top" src="/images/imgachat.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Nike</h5> 
-                      <h4 class="card-text">150€</h4>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="/article">
-          <div class="card-articles">
-            <div class="card-deck">
-              <div class="card">
-                <img class="card-img-top" src="/images/imgachat.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Nike</h5> 
-                      <h4 class="card-text">150€</h4>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </a>
-
-
-      <a href="/article">
-        <div class="card-articles">
-          <div class="card-deck">
-            <div class="card">
-              <img class="card-img-top" src="/images/imgachat.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Nike</h5> 
-                    <h4 class="card-text">150€</h4>
+      <%
+          for(var i = 0 ; i <Chaussure.length ; i++){
+      %>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="card">
+                        <img src=<%=Chaussure[i].url%> class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><%=Chaussure[i].name%></h5>
+                            <%=Chaussure[i].price%> €
+                            <a href="/panier?name=<%=Chaussure[i].name%>&price=<%=Chaussure[i].price%>&url=<%=Chaussure[i].url%>" class="btn btn-outline-light btn-sm">Achetez</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-          </div>
-        </div>
-      </a>  
-
-      </div>
+         
       
-    </div>
-  </div>
+        <% 
+              }
+            %> 
+
+     
+    </div>  
 </div>
- 
 </main>
-  
-<!-- cards -->
+// <!-- cards -->
 
       <!-- Footer -->
 

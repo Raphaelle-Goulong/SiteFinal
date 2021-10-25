@@ -38,7 +38,7 @@
             <a href="/panier">
               <i class="fad fa-shopping-cart "></i>
             </a>
-          
+          </div>
             
 <!-- Modal -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -50,8 +50,8 @@
             <span aria-hidden="true">&times;</span>
           </button>
       </div>
-    
-    <div class="modal-body">
+      
+      <div class="modal-body">
       <div class="container mt-5 mb-5 ">
         <div class="d-flex flex row justify-content-center">
             <!-- contenue formulaire -->
@@ -76,12 +76,12 @@
             <!-- contenue formulaire -->
         </div>
       </div>
+    </div>
 
           <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
                 <button type="button" class="btn btn-primary">Sauvegarder les changements</button>
           </div>
-    </div>
       </div>
   </div>
 </div>
@@ -207,6 +207,8 @@
         </ul>
       </div>
     </div>
+  </div>
+  
 <!-- seconde nav -->
 
 </header>
@@ -214,114 +216,35 @@
 
 <!-- cards -->
 <main>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-sm-8 col-lg-6">
-      <div class="card-body">
-        <a href="/article">
-          <div class="card-articles">
-            <div class="card-deck">
-              <div class="card">
-                <img class="card-img-top" src="/images/imgachat.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Nike</h5> 
-                      <h4 class="card-text">150€</h4>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </a>
-
-      <a href="/article">
-        <div class="card-articles">
-          <div class="card-deck">
-            <div class="card">
-              <img class="card-img-top" src="/images/imgachat.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">fille</h5> 
-                    <h4 class="card-text">150€</h4>
-                </div>
-            </div>
-          </div>
-        </div>
-      </a>
-
-    <a href="/article">
-      <div class="card-articles">
-        <div class="card-deck">
-          <div class="card">
-            <img class="card-img-top" src="/images/imgachat.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">enfant </h5> 
-                  <h4 class="card-text">150€</h4>
-              </div>
-          </div>
-        </div>
-      </div>
-    </a>  
-      </div>
+  <div class="container " >
+    <div class="row ">
     
-  </div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="card-body">
-        <a href="/article">
-          <div class="card-articles">
-            <div class="card-deck">
-              <div class="card">
-                <img class="card-img-top" src="images/imgachat.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Jupe</h5> 
-                      <h4 class="card-text">150€</h4>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="/article">
-          <div class="card-articles">
-            <div class="card-deck">
-              <div class="card">
-                <img class="card-img-top" src="/images/imgachat.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Pantalon</h5> 
-                      <h4 class="card-text">10€</h4>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </a>
-
-
-      <a href="/article">
-        <div class="card-articles">
-          <div class="card-deck">
-            <div class="card">
-              <img class="card-img-top" src="/images/imgachat.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">tee-shirt</h5> 
-                    <h4 class="card-text">20€</h4>
+      <%
+          for(var i = 0 ; i <habit.length ; i++){
+      %>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="card">
+                        <img src=<%=habit[i].url%> class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><%=habit[i].name%></h5>
+                            <%=habit[i].price%> €
+                            <a href="/panier?name=<%=habit[i].name%>&price=<%=habit[i].price%>&url=<%=habit[i].url%>" class="btn btn-outline-light btn-sm">Buy</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-          </div>
-        </div>
-      </a>  
-
-      </div>
+         
       
-    </div>
-  </div>
-</div>
- 
-</main>
-  
-<!-- cards -->
+        <% 
+              }
+            %> 
 
-      <!-- Footer -->
+     
+    </div>  
+</div>
+</main>
+// <!-- cards -->
+
+      // <!-- Footer -->
 
       <footer class="bg- text-center text-white">
         <div class="container p-4">

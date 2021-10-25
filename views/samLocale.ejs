@@ -208,114 +208,35 @@
 
 </header>
 
-
-<!-- cards -->
+ <!-- cards -->
 <main>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-sm-8 col-lg-6">
-      <div class="card-body">
-        <a href="/article">
-          <div class="card-articles">
-            <div class="card-deck">
-              <div class="card">
-                <img class="card-img-top" src="/images/imgachat.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Huile pour cheveux</h5> 
-                      <h4 class="card-text">10€</h4>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </a>
-
-      <a href="../articles/article.html">
-        <div class="card-articles">
-          <div class="card-deck">
-            <div class="card">
-              <img class="card-img-top" src="../img/imgachat.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Tricot</h5> 
-                    <h4 class="card-text">20€</h4>
-                </div>
-            </div>
-          </div>
-        </div>
-      </a>
-
-    <a href="../articles/article.html">
-      <div class="card-articles">
-        <div class="card-deck">
-          <div class="card">
-            <img class="card-img-top" src="../img/imgachat.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Beurre de Carité</h5> 
-                  <h4 class="card-text">30€</h4>
-              </div>
-          </div>
-        </div>
-      </div>
-    </a>  
-      </div>
+  <div class="container " >
+    <div class="row ">
     
-  </div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="card-body">
-        <a href="../articles/article.html">
-          <div class="card-articles">
-            <div class="card-deck">
-              <div class="card">
-                <img class="card-img-top" src="../img/imgachat.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Broderie</h5> 
-                      <h4 class="card-text">40€</h4>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="../articles/article.html">
-          <div class="card-articles">
-            <div class="card-deck">
-              <div class="card">
-                <img class="card-img-top" src="../img/imgachat.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Sik a coco</h5> 
-                      <h4 class="card-text">20€</h4>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </a>
-
-
-      <a href="../articles/article.html">
-        <div class="card-articles">
-          <div class="card-deck">
-            <div class="card">
-              <img class="card-img-top" src="../img/imgachat.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Doukoune</h5> 
-                    <h4 class="card-text">20€</h4>
+      <%
+          for(var i = 0 ; i <bijoux.length ; i++){
+      %>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="card">
+                        <img src=<%=bijoux[i].url%> class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><%=bijoux[i].name%></h5>
+                            <%=bijoux[i].price%> €
+                            <a href="/panier?name=<%=bijoux[i].name%>&price=<%=bijoux[i].price%>&url=<%=bijoux[i].url%>" class="btn btn-outline-light btn-sm">Achetez</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-          </div>
-        </div>
-      </a>  
-
-      </div>
+         
       
-    </div>
-  </div>
+        <% 
+              }
+            %> 
+
+     
+    </div>  
 </div>
 </main>
-  
-<!-- cards -->
+// <!-- cards -->
 
       <!-- Footer -->
 
