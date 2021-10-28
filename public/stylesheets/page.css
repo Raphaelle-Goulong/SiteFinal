@@ -56,8 +56,9 @@ body
 
 .navbar2
 {
-    background-color: rgba(0, 0, 0, 0.466);
+    background-color: rgba(22, 22, 22, 0.479);
     font-size: 17px;
+    
 }
 
 .collapse
@@ -66,36 +67,35 @@ body
 
 }
 .card
-{
+ {
     display: flex;
     background-color:#b89a82;
     border-radius: 15px;
     height: 550px;
     width: 350px;
     /* padding: 10px;  */
-    margin: 30px;
-    
-      
-}
+     margin: 60px;     
+} 
 
-.card-img-top{
+.card-img-top
+{
     height: 400px;
     border-radius: 15px;
-}
+} 
 
- .card-body
- {
+.card-body
+{
     display: flex-wrap;
     justify-content:center;
     flex-direction: row;
     font-size: 20px;
     
-}
+} 
 
 .card-title
 {
     padding: 20px;
-}
+} 
 
 a 
 {

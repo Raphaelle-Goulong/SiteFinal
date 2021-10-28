@@ -83,6 +83,7 @@ h1
 .table
 {
     background-color: rgb(144, 144, 144);
+    border-radius: 15px;
 }
 
 .form-outline
@@ -94,6 +95,7 @@ img.produit
 {
     height: 60px;
     width: 60px;
+    border-radius: 15px;
 }
 a 
 {

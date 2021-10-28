@@ -218,17 +218,17 @@
 <main>
   <div class="container " >
     <div class="row ">
-    
+      <form action="/samHabille" method="get" class="d-flex flex-wrap align-items-center justify-content-center">
       <%
           for(var i = 0 ; i <habit.length ; i++){
       %>
-      <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="">
                     <div class="card">
                         <img src=<%=habit[i].url%> class="card-img-top">
                         <div class="card-body text-center">
                             <h5 class="card-title"><%=habit[i].name%></h5>
                             <%=habit[i].price%> €
-                            <a href="/panier?name=<%=habit[i].name%>&price=<%=habit[i].price%>&url=<%=habit[i].url%>" class="btn btn-outline-light btn-sm">Buy</a>
+                            <a href="/panier?name=<%=habit[i].name%>&price=<%=habit[i].price%>&url=<%=habit[i].url%>" class="btn btn-outline-light btn-sm">Achetez</a>
                         </div>
                     </div>
                 </div>
@@ -237,7 +237,7 @@
         <% 
               }
             %> 
-
+</form>
      
     </div>  
 </div>

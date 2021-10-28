@@ -196,7 +196,7 @@
             <a class="nav-link" href="/samChausse">Sam'Chausse</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/samAmuse.html">Sam'Amuse</a>
+            <a class="nav-link" href="/samAmuse">Sam'Amuse</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Sam'Locale</a>
@@ -212,11 +212,11 @@
 <main>
   <div class="container " >
     <div class="row ">
-    
+      <form action="/samLocale" method="get" class="d-flex flex-wrap align-items-center justify-content-center">
       <%
           for(var i = 0 ; i <bijoux.length ; i++){
       %>
-      <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="">
                     <div class="card">
                         <img src=<%=bijoux[i].url%> class="card-img-top">
                         <div class="card-body text-center">
@@ -232,7 +232,7 @@
               }
             %> 
 
-     
+     </form>
     </div>  
 </div>
 </main>
