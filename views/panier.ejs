@@ -194,7 +194,7 @@
        <a class="nav-link"  href="/samHabille">Sam'Habille</a>
      </li>
      <li class="nav-item">
-       <a class="nav-link" href="/samChausse.html">Sam'Chausse</a>
+       <a class="nav-link" href="/samChausse">Sam'Chausse</a>
      </li>
      <li class="nav-item">
        <a class="nav-link" href="/samAmuse">Sam'Amuse</a>
@@ -233,8 +233,7 @@
         for (var i = 0 ; i < ajPanier.length ;i++){ 
             total = total + (ajPanier[i].price*ajPanier[i].quantité);
             %> 
-
-            4
+     
         <tr>
           <th scope="row"><%=i+1%></th>
           <td>
@@ -245,13 +244,13 @@
           </td>
           <td>
             <div class="form-outline">
-            <input type="number" id="typeNumber" class="form-control" value=<%=ajPanier[i].quantité%> />
+            <h5><%=ajPanier[i].quantité%> </h5> 
             <label class="form-label" for="typeNumber"></label>
           </div>
         </td>
           <td><h5><%=ajPanier[i].price%>€</h5></td>
           <td><h5><%=ajPanier[i].price*ajPanier[i].quantité%>€</h5></td>
-          <td><button class="btn btn-outline-light btn-sm" name="button"><i class="fad fa-trash"></i></button>
+          <td><button class="btn btn-outline-light btn-sm" name="button"><i class="fad fa-trash"></i></button></td>
         </tr>
        
         <% 

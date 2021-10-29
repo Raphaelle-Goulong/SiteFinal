@@ -1,12 +1,14 @@
+var mongoose = require('mongoose')
+
 var userSchema = mongoose.Schema({
     lastname: String,
     firstname: String,
-    date:Number,
+    date:Date,
     email: String,
     password :String,
     adress:String,
     city:String,
-    zip:Number,
+    zip:String,
 
     });
     var UserModel = mongoose.model('users', userSchema);

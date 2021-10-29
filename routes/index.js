@@ -17,7 +17,7 @@ var habit = [
 ]
 
 var jouet = [
-  {name:"Lego Batman",url:"/images/Jeux1.jpg",price:10},
+  {name:"Lego Batman",url:"/images/Jeux1.jpg",price:10,quantité:1},
   {name:"Xbox series x",url:"/images/Jeux2.jpg",price:499},
   {name:"Train lego ",url:"/images/Jeux3.jpg",price:20},
   {name:"Playstation 1",url:"/images/Jeux4.jpg",price:99},
@@ -52,9 +52,7 @@ var Chaussure = [
 ]
 
 var ajPanier = [
-  {name:'name',url:'url',price:'price',quantité:'quantité'},
-  {name:"Bracelet de perle",url:"/images/Bijoux2.jpg",price:59,quantité:2},
-  {name:"Bottine",url:"/images/Chaussure9.jpg",price:39,quantité:5},
+  
 ]
 
 
@@ -89,6 +87,13 @@ router.post('/inscription', function(req, res, next) {
 });
 
 router.get('/panier', function(req, res, next) {
+  ajPanier.push({
+    name: req.query.name,
+    url : req.query.url,
+    price : req.query.price,
+    quantité : req.query.quantité,
+  })
+
   res.render('panier',{ajPanier} );
 });
 
